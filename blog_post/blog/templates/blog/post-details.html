@@ -38,6 +38,21 @@
         {{ post.content|linebreaks }}
     </main>
 
+    <section id="comments">
+        <ul>
+            {% for comment in comments %}
+                <li>
+                    <h2>
+                        {{ comment.user_name }}
+                    </h2>
+                    <p>
+                        {{ comment.text|linebreaks }}
+                    </p>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+
     <div>
         <form id="comment-form" action="{% url 'single-post' post.slug %}" method="post">
             {% csrf_token %}

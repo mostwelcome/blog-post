@@ -22,8 +22,8 @@ body {
 #summary h2 {
   color: white;
   font-size: 4.5rem;
-  margin-bottom : 0.25rem;
- }
+  margin-bottom: 0.25rem;
+}
 
 #summary article {
   position: absolute;
@@ -48,13 +48,32 @@ body {
   font-weight: bold;
 }
 
-#summary a{
-  color:white;
-  text-decoration:none;
+#summary a {
+  color: white;
+  text-decoration: none;
 }
 
 #summary time {
   font-weight: bold;
+}
+
+#read-later {
+  margin: 2rem 0;
+}
+
+#read-later button {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0.5rem 2rem;
+  font: inherit;
+  color: white;
+  cursor: pointer;
+}
+
+#read-later button:hover,
+#read-later button:active {
+  background-color: white;
+  color: #390281;
 }
 
 main {
@@ -67,13 +86,12 @@ main {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-.tag{
-background-color:white;
-text-color:#390281;
-padding:0.5rem 1rem;
-border-radius:8px;
+.tag {
+  background-color: white;
+  color: #390281;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
 }
-
 
 #comment-form {
   margin: 3rem auto;
@@ -100,7 +118,6 @@ border-radius:8px;
   background-color: #4f0ba7;
   border-color: #4f0ba7;
 }
-
 
 .form-control {
   margin-bottom: 1rem;

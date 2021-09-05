@@ -24,7 +24,7 @@ class Post(models.Model):
     title = models.CharField(max_length=100)
     excerpt = models.CharField(max_length=200)
     author = models.ForeignKey(Author, null=True, on_delete=models.SET_NULL, related_name="post")
-    image_name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='posts', null=True)
     date = models.DateTimeField(auto_now=True)
     slug = models.SlugField(default="", null=False, blank=True, unique=True, db_index=True)
     content = models.TextField()
